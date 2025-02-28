@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    background-color: #282c34;
+}
+
+#container {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center horizontally */
+    gap: 10px; /* Add space between elements */
+}
+
+#gameTitle {
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Atlantis International';
+}
+
+#backgroundButton {
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    box-shadow: 1px 1px white;
+    border-radius: 7px;
+    width: 300px;
+    font-family: 'Atlantis International';
+}
+
+#backgroundButton:hover {
+    background-color: #0a0b0e;
+}
+
+canvas {
+    background-color: #6a758a;
+    border: 10px solid #000000;
+    overflow: hidden;
+}
+
+p {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Atlantis International';
+}
+
+  .floating-text {
+    display: inline-block; /* Ensure it behaves like a block for animation */
+    animation: float 2s ease-in-out infinite; /* Customize duration and looping */
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to start */
+    }
+  }
